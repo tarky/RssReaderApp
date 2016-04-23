@@ -9,14 +9,36 @@ class ViewController: UIViewController {
     super.viewDidLoad()
        
     var controllers : [UIViewController] = []
-    for i in 1...4 {
-      let controller   = TableViewController(
-        nibName: "TableViewController",
-        bundle:  nil
-      )
-      controller.title = "MENU" + String(i)
-      controllers.append(controller)
+    
+    var feeds: [Dictionary<String, String>] =
+      [
+        [
+          "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/top/rss",
+          "title": "top"
+        ],
+        [
+          "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ruby/rss",
+          "title": "ruby"
+        ],
+        [
+          "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ios/rss",
+          "title": "ios"
+        ],
+        [
+          "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/infrastructure/rss",
+          "title": "infrastructure"
+        ],
+      ]
+    for feed in feeds
+    {
+      let feedController = TableViewController(nibName: "TableViewController", bundle: nil)
+      feedController.parent = self
+      feedController.fetchFrom = feed["link"]!
+      feedController.title = feed["title"]
+      controllers.append(feedController)
     }
+    
+
 
     let params: [CAPSPageMenuOption] = [
       .ScrollMenuBackgroundColor(UIColor.blackColor()),

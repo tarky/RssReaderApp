@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
 
 class TableViewController: UITableViewController {
-        
+  
+    var fetchFrom: String?
+    var parent: UIViewController?
+
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      super.viewDidLoad()
+      Alamofire.request(.GET, fetchFrom!).responseJSON { response in
+        if let values = response.result.value {
+          JSON(values)["responseData"]["feed"]["entries"].forEach {i,value in
+            print(value["title"].string!)
+            print(value["link"].string!)
+          }
+        }
+      }
     }
 
     override func didReceiveMemoryWarning() {
