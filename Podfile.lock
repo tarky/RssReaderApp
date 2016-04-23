@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (3.3.1)
   - PageMenu (1.2.9)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire
   - PageMenu
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: dedf75908b4594d3e3907308f14ce184f22a6e79
+PODFILE CHECKSUM: f1e5950e83d331b08e808373d26bba0f9556bf5b
 
 COCOAPODS: 1.0.0.beta.2
