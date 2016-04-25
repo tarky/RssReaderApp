@@ -2,17 +2,22 @@ PODS:
   - Alamofire (3.3.1)
   - PageMenu (1.2.9)
   - SwiftyJSON (2.3.2)
+  - TOWebViewController (2.2.3):
+    - TOWebViewController/Core (= 2.2.3)
+  - TOWebViewController/Core (2.2.3)
 
 DEPENDENCIES:
   - Alamofire
   - PageMenu
   - SwiftyJSON
+  - TOWebViewController
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TOWebViewController: ca47b9aeefe66acb3353d197dc8270338540b116
 
-PODFILE CHECKSUM: f1e5950e83d331b08e808373d26bba0f9556bf5b
+PODFILE CHECKSUM: e1bc05129c1dedeb480e4029c5e78e42da19ffd1
 
 COCOAPODS: 1.0.0.beta.2

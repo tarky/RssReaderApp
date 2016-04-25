@@ -6,4 +6,5 @@ target 'RssReaderApp' do
  pod 'PageMenu'
  pod 'Alamofire'
  pod 'SwiftyJSON'
+ pod 'TOWebViewController'
 end
