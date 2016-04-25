@@ -56,8 +56,10 @@ class TableViewController: UITableViewController {
     let entry = self.entries[indexPath.row]
     cell.title.text = entry.title
     cell.desc.text = entry.desc
+    cell.link = entry.link
     return cell
   }
+
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let detailViewController = DetailViewController()
     detailViewController.entry = self.entries[indexPath.row]
