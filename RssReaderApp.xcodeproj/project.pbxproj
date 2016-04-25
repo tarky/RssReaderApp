@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7712314027AEA9017EF84B44 /* Pods_RssReaderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58009B619EF959D878F33923 /* Pods_RssReaderApp.framework */; };
+		A640D8BB1CCB174000F70167 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D8BA1CCB174000F70167 /* Entry.swift */; };
+		A640D8E21CCC424B00F70167 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D8E01CCC424B00F70167 /* FeedTableViewCell.swift */; };
+		A640D8E31CCC424B00F70167 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A640D8E11CCC424B00F70167 /* FeedTableViewCell.xib */; };
 		A68EC4E11CC8BDEE00F728CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EC4E01CC8BDEE00F728CD /* AppDelegate.swift */; };
 		A68EC4E31CC8BDEE00F728CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EC4E21CC8BDEE00F728CD /* ViewController.swift */; };
 		A68EC4E61CC8BDEE00F728CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68EC4E41CC8BDEE00F728CD /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		1DD9E20DB6DB722784607692 /* Pods-RssReaderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReaderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RssReaderApp/Pods-RssReaderApp.release.xcconfig"; sourceTree = "<group>"; };
 		510C1EB4908F1A7787B92E3F /* Pods-RssReaderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReaderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RssReaderApp/Pods-RssReaderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58009B619EF959D878F33923 /* Pods_RssReaderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RssReaderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A640D8BA1CCB174000F70167 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		A640D8E01CCC424B00F70167 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		A640D8E11CCC424B00F70167 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		A68EC4DD1CC8BDEE00F728CD /* RssReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68EC4E01CC8BDEE00F728CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A68EC4E21CC8BDEE00F728CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				A68EC4EC1CC8BDEE00F728CD /* Info.plist */,
 				A68EC4F21CC8DB4200F728CD /* TableViewController.swift */,
 				A68EC4F31CC8DB4200F728CD /* TableViewController.xib */,
+				A640D8BA1CCB174000F70167 /* Entry.swift */,
+				A640D8E01CCC424B00F70167 /* FeedTableViewCell.swift */,
+				A640D8E11CCC424B00F70167 /* FeedTableViewCell.xib */,
 			);
 			path = RssReaderApp;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68EC4EB1CC8BDEE00F728CD /* LaunchScreen.storyboard in Resources */,
+				A640D8E31CCC424B00F70167 /* FeedTableViewCell.xib in Resources */,
 				A68EC4E81CC8BDEE00F728CD /* Assets.xcassets in Resources */,
 				A68EC4E61CC8BDEE00F728CD /* Main.storyboard in Resources */,
 				A68EC4F51CC8DB4200F728CD /* TableViewController.xib in Resources */,
@@ -217,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A640D8BB1CCB174000F70167 /* Entry.swift in Sources */,
 				A68EC4E31CC8BDEE00F728CD /* ViewController.swift in Sources */,
 				A68EC4F41CC8DB4200F728CD /* TableViewController.swift in Sources */,
 				A68EC4E11CC8BDEE00F728CD /* AppDelegate.swift in Sources */,
+				A640D8E21CCC424B00F70167 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
