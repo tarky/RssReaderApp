@@ -18,6 +18,7 @@
 		A68EC4EB1CC8BDEE00F728CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68EC4E91CC8BDEE00F728CD /* LaunchScreen.storyboard */; };
 		A68EC4F41CC8DB4200F728CD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68EC4F21CC8DB4200F728CD /* TableViewController.swift */; };
 		A68EC4F51CC8DB4200F728CD /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68EC4F31CC8DB4200F728CD /* TableViewController.xib */; };
+		A69E56861CCDB38300C447DA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E56851CCDB38300C447DA /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A68EC4EC1CC8BDEE00F728CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68EC4F21CC8DB4200F728CD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A68EC4F31CC8DB4200F728CD /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		A69E56851CCDB38300C447DA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A640D8BA1CCB174000F70167 /* Entry.swift */,
 				A640D8E01CCC424B00F70167 /* FeedTableViewCell.swift */,
 				A640D8E11CCC424B00F70167 /* FeedTableViewCell.xib */,
+				A69E56851CCDB38300C447DA /* DetailViewController.swift */,
 			);
 			path = RssReaderApp;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				A640D8BB1CCB174000F70167 /* Entry.swift in Sources */,
 				A68EC4E31CC8BDEE00F728CD /* ViewController.swift in Sources */,
 				A68EC4F41CC8DB4200F728CD /* TableViewController.swift in Sources */,
+				A69E56861CCDB38300C447DA /* DetailViewController.swift in Sources */,
 				A68EC4E11CC8BDEE00F728CD /* AppDelegate.swift in Sources */,
 				A640D8E21CCC424B00F70167 /* FeedTableViewCell.swift in Sources */,
 			);

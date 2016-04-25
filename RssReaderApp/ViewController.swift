@@ -7,7 +7,18 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-       
+    
+    self.title           = "Dev News"
+    let navBar           = self.navigationController?.navigationBar
+    navBar!.barTintColor = UIColor.blackColor()
+    navBar!.shadowImage  = UIImage()
+    navBar!.tintColor    = UIColor.whiteColor()
+    navBar!.titleTextAttributes =
+      [NSForegroundColorAttributeName: UIColor.grayColor()]
+    navBar!.setBackgroundImage(
+      UIImage(), forBarMetrics: UIBarMetrics.Default
+    )
+
     var controllers : [UIViewController] = []
     
     var feeds: [Dictionary<String, String>] =
@@ -41,11 +52,11 @@ class ViewController: UIViewController {
 
 
     let params: [CAPSPageMenuOption] = [
-      .ScrollMenuBackgroundColor(UIColor.blackColor()),
+      .ScrollMenuBackgroundColor(UIColor.blueColor()),
       .ViewBackgroundColor(UIColor.whiteColor()),
       .SelectionIndicatorColor(UIColor.orangeColor()),
       .MenuItemFont(UIFont(name: "HelveticaNeue", size: 15.0)!),
-      .MenuHeight(80.0),
+      .MenuHeight(30.0),
       .MenuItemWidth(90.0),
       .CenterMenuItems(true)
     ]

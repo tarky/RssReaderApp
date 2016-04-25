@@ -20,7 +20,10 @@ class TableViewController: UITableViewController {
     super.viewDidLoad()
     tableView.delegate = self
     tableView.dataSource = self
-    self.tableView.registerNib(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
+    self.tableView.registerNib(
+      UINib(nibName: "FeedTableViewCell", bundle: nil),
+      forCellReuseIdentifier: "FeedTableViewCell"
+    )
 
     Alamofire.request(.GET, fetchFrom!).responseJSON { response in
       if let values = response.result.value {
@@ -38,7 +41,6 @@ class TableViewController: UITableViewController {
 
   override func didReceiveMemoryWarning() {
       super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,5 +57,10 @@ class TableViewController: UITableViewController {
     cell.title.text = entry.title
     cell.desc.text = entry.desc
     return cell
+  }
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let detailViewController = DetailViewController()
+    detailViewController.entry = self.entries[indexPath.row]
+    parent!.navigationController!.pushViewController(detailViewController , animated: true)
   }
 }
